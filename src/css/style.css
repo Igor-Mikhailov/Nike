@@ -224,6 +224,48 @@ header nav{
 	}
 }
 
+/* Burger-menu (Orynik)*/
+.main-nav{
+	position: relative;
+}
+
+.main-menu{
+	box-sizing: border-box;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+	margin-left: 20px;
+
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 1160px;
+	max-height: 0;
+
+	transform: translateY(100%);
+	
+	overflow: hidden;
+
+	/* ALARM Два вида фона, нужно выбрать либо без фона вообще
+	либо с одним из этих */
+	/* 1 */
+	/* background: linear-gradient(180deg, #00adb8, #01dde2); */
+	/* 2 */
+	/* background-image: url("../img/Overlay\ Text.jpg"); */
+	/* background-position: -220px 0px; */
+}
+.main-menu a{
+	font-family: inherit;
+	font-size: 18px;
+	color: #fff;
+
+	display: inline;
+	padding: 10px;
+	text-decoration: none;
+	border-top: 2px solid #0aeef1;
+}
 
 
 
