@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<nav>
+				<div class="navbar-brand">
+					<img src="img/nike__logo.png" alt="">
+				</div>
+				<a href="#" class="navbar-burger">
+					<span></span>
+				</a>
+			</nav>
+			<div class="row">
+				<div class="header__title">
+					<h1>Your Title Goes Here Make It Long & Maybe 3 Lines</h1>
+					<div class="links">
+						<a href="">EXPLORE</a>
+						<a href="">ADD TO CART</a>
+					</div>
+				</div>
+				<div class="header__images">
+					<img src="img/shoe.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section-1"></section>
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<!-- Я писал этот п*здец целый час. Аминь и удачи тебе в написании обычного js (фишка с анимацией написана в стилях) -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.navbar-burger').click(function(){
+				$('.navbar-burger').toggleClass('active');
+			})
+		})
+	</script>
+</body>
+</html>
