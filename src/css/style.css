@@ -236,15 +236,15 @@ header nav{
 	bottom: 0;
 	left: 0;
 
-	margin-left: 20px;
-
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	width: 1160px;
+	
+	width: 96%;
 	max-height: 0;
 
 	transform: translateY(100%);
+	transition: 0.5s all ease-in-out;
 	
 	overflow: hidden;
 
@@ -257,17 +257,46 @@ header nav{
 	/* background-position: -220px 0px; */
 }
 .main-menu a{
+	display: block;
+	padding: 10px;
+
+	max-width: 100px;
+	border-top: 2px solid #0aeef1;
+
 	font-family: inherit;
 	font-size: 18px;
 	color: #fff;
 
-	display: inline;
-	padding: 10px;
-	text-decoration: none;
-	border-top: 2px solid #0aeef1;
+	transition: 0.7s all;
 }
 
+.main-menu a:hover{
+	background: #30fcff63;
+}
 
+.main-menu a:active{
+	background: #22a9acc2;
+}
+
+@media (max-width: 914px) and (min-width: 420px){
+	.main-menu{
+		flex-direction: column;
+
+		background-image: url("../img/Overlay\ Text.jpg");
+		background-position: -91px 0px;
+	}
+	
+	.main-menu a{
+		display: block;
+		width: 100%;
+		border-top: none;
+
+		text-align: center;
+	}
+	.main-menu a:first-child{
+		border-top: 2px solid #0aeef1;
+	}
+}
 
 
 
