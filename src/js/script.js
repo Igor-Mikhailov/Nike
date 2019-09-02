@@ -7,10 +7,10 @@ navbar.onclick = () =>{
     //Проверка на наличие класса
     if(navbar.classList.contains('active')){
         navbar.classList.remove("active");
-        Menu.style.maxHeight = "0"
+        Menu.style.maxHeight = "0";
     }
     else{
         navbar.classList.add("active");
         Menu.style.maxHeight = "720px";
     }
-}
+};
